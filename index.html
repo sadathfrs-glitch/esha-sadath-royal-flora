@@ -7,7 +7,7 @@
 <meta name="theme-color" content="#f1eadf">
 <meta property="og:title" content="Sadath Fariz &amp; Esha Sabeesh Ibrahim | Royal Flora Nikkah Invitation">
 <meta property="og:description" content="Sunday, 31 January 2027 · Alfa Horizon, Vallarpadam, Kochi. You are lovingly invited.">
-<script>document.documentElement.className+=' js'</script>
+<script>if ('scrollRestoration' in history) history.scrollRestoration='manual'; document.documentElement.className+=' js'</script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=DM+Sans:wght@400;500&family=Amiri&display=swap">
 <style>
 :root{
@@ -288,7 +288,7 @@ h3,.venue,.cd b,.cd span { color:#59644f; }
   au.volume=.8;
   sl.addEventListener('click',function(){
     op.classList.add('go');document.body.classList.remove('lock');window.scrollTo(0,0);play();
-    setTimeout(function(){op.style.display='none'},2200);
+    setTimeout(function(){if(document.activeElement===sl)sl.blur();op.style.display='none';window.scrollTo(0,0);requestAnimationFrame(function(){window.scrollTo(0,0)})},2200);
   });
   var els=document.querySelectorAll('.rv');
   if('IntersectionObserver' in window){
