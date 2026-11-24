@@ -167,6 +167,14 @@ h3,.venue,.cd b,.cd span { color:#59644f; }
   .seal::after { animation:none; }
 }
 
+
+/* Use solid text on mobile WebKit so names never collapse into gradient blocks. */
+.names,h2,.date { background:none !important; -webkit-text-fill-color:#58634f !important; color:#58634f !important; filter:none !important; }
+.ob { bottom:13%; }
+.ob .names { font-size:clamp(1.55rem,6.5vw,2.3rem); line-height:1.08; letter-spacing:.08em; margin-bottom:8px; }
+.ob .sans { color:#71775f; }
+.hero .amp { -webkit-text-fill-color:#a88a53 !important; color:#a88a53 !important; }
+
 </style>
 </head>
 <body class="lock">
